@@ -36,6 +36,8 @@ flutter:
     - assets/images/grimorio.png
     - assets/images/more_stars.svg
     - assets/images/grimorio_empty.svg
+    - assets/images/grimorio_1152.png
+    - assets/images/grimorio_titulo_1152.png
  
   fonts:
   - family: Bigelow Rules

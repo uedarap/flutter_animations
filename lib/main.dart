@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grimorio/screens/dashboard.dart';
+import 'screens/splash.dart';
 
 void main() {
   runApp(const Grimorio());
@@ -14,7 +14,7 @@ class Grimorio extends StatelessWidget {
       title: "Grimório",
       theme: ThemeData.dark(useMaterial3: true),
       debugShowCheckedModeBanner: false,
-      home: const Dashboard(),
+      home: const SplashScreen(),
     );
   }
 }
