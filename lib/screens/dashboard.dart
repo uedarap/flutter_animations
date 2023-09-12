@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:grimorio/screens/components/carousel_item.dart';
 import 'package:grimorio/screens/login.dart';
 import 'package:grimorio/screens/components/primary_button.dart';
@@ -21,7 +22,7 @@ class Dashboard extends StatelessWidget {
             child: Stack(
               alignment: Alignment.center,
               children: <Widget>[
-                //SvgPicture.asset("assets/images/background.svg"),
+                SvgPicture.asset("assets/images/background.svg"),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
@@ -41,7 +42,20 @@ class Dashboard extends StatelessWidget {
                           text: "Visualize seu progresso",
                         ),
                       ],
-                      options: CarouselOptions(),
+                      options: CarouselOptions(
+                        height: 500,
+                        aspectRatio: 1,
+                        viewportFraction: 1,
+                        initialPage: 0,
+                        enableInfiniteScroll: true,
+                        autoPlay: true,
+                        autoPlayInterval: const Duration(seconds: 5),
+                        autoPlayAnimationDuration:
+                            const Duration(milliseconds: 1000),
+                        autoPlayCurve: Curves.easeInBack,
+                        scrollDirection: Axis.vertical,
+                        reverse: false,
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 104.0),
