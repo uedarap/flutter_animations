@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:grimorio/screens/components/carousel_item.dart';
 import 'package:grimorio/screens/login.dart';
 import 'package:grimorio/screens/components/primary_button.dart';
 import 'package:grimorio/theme.dart';
@@ -26,10 +27,19 @@ class Dashboard extends StatelessWidget {
                   children: <Widget>[
                     //SvgPicture.asset("assets/images/logo.svg"),
                     CarouselSlider(
-                      items: [
-                        Image.asset('assets/carousel/carousel-001.png'),
-                        Image.asset('assets/carousel/carousel-002.png'),
-                        Image.asset('assets/carousel/carousel-003.png'),
+                      items: const [
+                        CarouselItem(
+                          imagePath: 'carousel-001.png',
+                          text: "Registre seus livros",
+                        ),
+                        CarouselItem(
+                          imagePath: 'carousel-002.png',
+                          text: "Faça anotações",
+                        ),
+                        CarouselItem(
+                          imagePath: 'carousel-003.png',
+                          text: "Visualize seu progresso",
+                        ),
                       ],
                       options: CarouselOptions(),
                     ),
