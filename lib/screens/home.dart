@@ -1,7 +1,6 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:grimorio/controller/book_controller.dart';
 
 import '../../theme.dart';
@@ -10,6 +9,7 @@ import 'book_details.dart';
 import 'components/display_text.dart';
 import 'components/floating_button.dart';
 import 'search_books.dart';
+import 'package:lottie/lottie.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -157,7 +157,7 @@ class _EmptyHome extends StatelessWidget {
       ),
       Padding(
         padding: const EdgeInsets.only(bottom: 40.0),
-        child: SvgPicture.asset("assets/images/grimorio_empty.svg"),
+        child: Lottie.asset("assets/animations/book_lottie.json"),
       ),
       Padding(
         padding: const EdgeInsets.only(bottom: 8.0),
