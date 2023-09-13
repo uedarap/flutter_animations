@@ -36,7 +36,6 @@ class _SplashScreenState extends State<SplashScreen> {
             AnimatedOpacity(
               opacity: imageOpacity,
               duration: Duration(milliseconds: timeToAnimationInMilliseconds),
-              curve: Curves.ease,
               child: Padding(
                 padding: const EdgeInsets.only(top: 16),
                 child: Image.asset(
