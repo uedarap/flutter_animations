@@ -52,7 +52,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   waitAndShow() {
-    Future.delayed(const Duration(milliseconds: 700)).then((value) {
+    Future.delayed(const Duration(milliseconds: 1250)).then((value) {
       setState(() {
         imageOpacity = 1;
       });
