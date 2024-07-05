@@ -1,10 +1,7 @@
-![Flutter com Animações: Animações Implícitas](thumbnail.png)
-
 # Flutter com Animações: Animações Implícitas
 
-Projeto Meu Pequeno Grimório para o curso de Flutter com Animações: Animações Implícitas, focado em apresentar soluções da animações para diversos problemas usando Flutter.
 
-### Tópicos abordados no curso:
+### Tópicos abordados no projeto:
 
 - Como criar uma Splash Screen nativa;
 - Como animar uma tela de Splash;
@@ -12,8 +9,6 @@ Projeto Meu Pequeno Grimório para o curso de Flutter com Animações: Animaçõ
 - Usar carrossel para criar uma tela de onboarding;
 - Usar Lottie para animações complexas;
 - Como animar a transição entre telas;
-
-Este curso é indicado para pessoas que já tem conhecimento intermediário e querem aprofundar seu conhecimento em Flutter, seguindo boas práticas e também entendendendo como funciona animações dentro dos padrões mobile.
 
 ## 📑 Requisitos
 
